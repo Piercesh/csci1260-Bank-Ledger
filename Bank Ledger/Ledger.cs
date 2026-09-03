@@ -8,6 +8,9 @@ namespace Bank_Ledger
 {
     public class Ledger
     {
+        private Account account;
+        private int nextId;
 
+        public int Count { get; }
     }
 }
