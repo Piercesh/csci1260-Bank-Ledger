@@ -14,7 +14,9 @@ namespace Bank_Ledger
         private int id;
         private string kind;
         private double amount;
-
+        /// <summary>
+        /// This will get the id, kind and amount of the transaction and show the name and the amount of money.
+        /// </summary>
         public int Id
         {
             get { return id; }
@@ -27,13 +29,22 @@ namespace Bank_Ledger
         {
             get { return amount; }
         }
-
+        /// <summary>
+        /// This will make it capable of creating a transaction with an id, kind and amount.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="kind"></param>
+        /// <param name="amount"></param>
         public Transaction(int id, string kind, double amount)
         {
             this.id = id;
             this.kind = kind;
             this.amount = amount;
         }
+        /// <summary>
+        /// This is how the deposit will happen and it will make the deposit is either true or false.
+        /// </summary>
+        /// <returns></returns>
         public bool IsDeposit()
         {
             if (kind == "deposit")
@@ -45,7 +56,10 @@ namespace Bank_Ledger
                 return false;
             }
         }
-
+        /// <summary>
+        /// This is what will show the id, kind and amount when you run the code
+        /// </summary>
+        /// <returns></returns>
         public string Describe()
         {          
             return ($"Transaction ID: {id}, Kind: {kind}, Amount: {amount}");
