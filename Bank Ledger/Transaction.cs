@@ -15,9 +15,18 @@ namespace Bank_Ledger
         private string kind;
         private double amount;
 
-        public int Id { get; }
-        public string Kind { get; }
-        public double Amount { get; }
+        public int Id
+        {
+            get { return id; }
+        }
+        public string Kind
+        {
+            get { return kind; }
+        }
+        public double Amount
+        {
+            get { return amount; }
+        }
 
         public Transaction(int id, string kind, double amount)
         {
