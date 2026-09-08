@@ -9,3 +9,13 @@ The next class is the Account class which did take a bit of time, but I did make
 This class will have owner and balance. They should be capable of getting the owners name and should show the balance of the money.
 In this class It should be capable of showing the balance and will add and subtract what you have put in.
 The ToString() Should be capable of showing the owner and balance once you have run the code.
+For the last class that needed to be put in, there is Ledger.
+Ledger will need to have Account, list<Transaction>, and nextId.
+I then put in the int Count so that it will remember the numbers that were put into the transaction.
+a public ledger would have to be made so it can make the account, so that will be capable of putting in the Id, show the list, and the money of the account.
+Next things that needed to be put in are a public Withdraw and Deposit.
+Withdraw will take money away, while Deposit will add in money.
+If you try to go and try to withdraw too much money then it will not work.
+Ledger was the class that took me the longest to get done.
+And the last one was Main itself. It needed to some code that was connected to Ledger for it to work.
+This should show the person's name and the balance that will be the total from the withdraw and deposit.
